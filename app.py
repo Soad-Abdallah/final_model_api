@@ -71,6 +71,10 @@ app = Flask(__name__)
 def hello():
     return "hey" 
 
+@app.route("/D", methods=['POST'])
+def hello():
+    return "heydddddd"     
+
 @app.route('/Mypredict', methods=['POST'])
 def Mypredict():
     print("a")
